@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ShadowBox } from "./components/ShadowBox";
 
 const links = [
   { href: "/about", label: "About & Projects" },
@@ -29,17 +30,26 @@ export default function Nav() {
           <nav className="flex items-center gap-3">
             {links.map((l) => {
               const active = isActive(l.href);
-              return (
+
+              const linkInner = (
+                <span className="px-6 py-3 text-base font-bold inline-block">
+                  {l.label}
+                </span>
+              );
+
+              return active ? (
+                <div key={l.href} className="inline-block">
+                  <ShadowBox direction="tl" offset={6} className="inline-block">
+                    <Link href={l.href} className="block">
+                      {linkInner}
+                    </Link>
+                  </ShadowBox>
+                </div>
+              ) : (
                 <Link
                   key={l.href}
                   href={l.href}
-                  className={[
-                    "relative px-6 py-3 text-base font-bold",
-                    "hover:underline underline-offset-4",
-                    active
-                      ? "border-2 border-neutral-900 bg-white before:absolute before:inset-0 before:translate-x-[6px] before:translate-y-[6px] before:border-2 before:border-neutral-900 before:-z-10"
-                      : "border-2 border-transparent text-neutral-950",
-                  ].join(" ")}
+                  className="px-6 py-3 text-base font-bold border-2 border-transparent hover:underline underline-offset-4"
                 >
                   {l.label}
                 </Link>
