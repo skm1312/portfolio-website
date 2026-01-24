@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShadowBox } from "./components/ShadowBox";
+import ShadowBox from "./components/ShadowBox";
 
 const links = [
   { href: "/about", label: "About & Projects" },
