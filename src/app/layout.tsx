@@ -18,11 +18,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Page content aligned to same grid as header */}
         <main className="mx-auto w-full max-w-6xl px-10 pt-20 pb-20">{children}</main>
 
-        {/* Footer can stay aligned, but full width line looks nicer like Nick */}
         <footer className="border-t border-neutral-200">
-          <div className="mx-auto max-w-6xl px-10 py-8 text-sm text-neutral-600 flex items-center justify-between">
+          <div className="mx-auto max-w-6xl px-10 py-8 text-sm text-neutral-600">
             <span>© {new Date().getFullYear()} Jahnavi Uppuluri</span>
-            <span className="text-neutral-500">Built with Next.js</span>
           </div>
         </footer>
       </body>

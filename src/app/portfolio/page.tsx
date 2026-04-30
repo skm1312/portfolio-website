@@ -1,88 +1,55 @@
-import Image from "next/image";
 import Link from "next/link";
 import { PageShell, PageTitle } from "../components/Page";
 import ShadowBox from "../components/ShadowBox";
 import { portfolioItems } from "./portfolio-data";
 
-function PortfolioCard({
-  tags,
-  title,
-  blurb,
-  href,
-  imageSrc,
-  imageAlt,
-  imageSide = "right",
-}: (typeof portfolioItems)[number]) {
-  const isExternal = href.startsWith("http") || href.endsWith(".pdf");
-
-  const Text = (
-    <div className="min-w-0">
-      <div className="text-sm text-neutral-500 font-medium">{tags}</div>
-
-      <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-neutral-900">
-        {title}
-      </h2>
-
-      <p className="mt-4 text-base leading-7 text-neutral-700 max-w-xl">
-        {blurb}
-      </p>
-
-      <div className="mt-6">
-        {isExternal ? (
-          <a
-            href={href}
-            target="_blank"
-            rel="noreferrer"
-            className="font-extrabold underline underline-offset-4"
-          >
-            More Details
-          </a>
-        ) : (
-          <Link
-            href={href}
-            className="font-extrabold underline underline-offset-4"
-          >
-            More Details
-          </Link>
-        )}
-      </div>
-    </div>
-  );
-
-  const Media = (
-    <div className="w-full">
-      <div className="relative w-full aspect-[16/9]">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          fill
-          className="object-contain"
-          sizes="(min-width: 1024px) 520px, 100vw"
-        />
-      </div>
-    </div>
-  );
-
+function LeftLabel({ text }: { text: string }) {
   return (
     <ShadowBox direction="tl" offset={6}>
-      <div className="bg-neutral-100">
-        <div className="mx-auto max-w-6xl px-10 py-14">
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
-            {imageSide === "left" ? (
-              <>
-                {Media}
-                {Text}
-              </>
-            ) : (
-              <>
-                {Text}
-                {Media}
-              </>
-            )}
-          </div>
-        </div>
+      <div className="h-[180px] flex items-center justify-center">
+        <div className="text-2xl font-extrabold tracking-tight text-center px-4 leading-tight">{text}</div>
       </div>
     </ShadowBox>
+  );
+}
+
+function RightPanel({ children }: { children: React.ReactNode }) {
+  return (
+    <ShadowBox direction="tl" offset={6}>
+      <div className="bg-neutral-100 p-6">{children}</div>
+    </ShadowBox>
+  );
+}
+
+function PortfolioRow({ tags, title, blurb, href }: (typeof portfolioItems)[number]) {
+  const isExternal = href.startsWith("http") || href.endsWith(".pdf");
+
+  return (
+    <>
+      <div className="md:sticky md:top-28 self-start">
+        <LeftLabel text={title} />
+      </div>
+      <RightPanel>
+        <div className="text-xs font-bold text-neutral-500 uppercase tracking-wider mb-3">{tags}</div>
+        <p className="text-sm leading-7 text-neutral-800">{blurb}</p>
+        <div className="mt-5">
+          {isExternal ? (
+            <a
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              className="font-extrabold underline underline-offset-4 text-sm"
+            >
+              Read Case Study →
+            </a>
+          ) : (
+            <Link href={href} className="font-extrabold underline underline-offset-4 text-sm">
+              Read Case Study →
+            </Link>
+          )}
+        </div>
+      </RightPanel>
+    </>
   );
 }
 
@@ -93,11 +60,13 @@ export default function PortfolioPage() {
         <PageTitle>Product Portfolio.</PageTitle>
       </PageShell>
 
-      <div className="space-y-12">
-        {portfolioItems.map((item) => (
-          <PortfolioCard key={item.slug} {...item} />
-        ))}
-      </div>
+      <PageShell>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-[380px_1fr]">
+          {portfolioItems.map((item) => (
+            <PortfolioRow key={item.slug} {...item} />
+          ))}
+        </div>
+      </PageShell>
     </div>
   );
 }
