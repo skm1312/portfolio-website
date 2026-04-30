@@ -14,7 +14,6 @@ export default function HomePage() {
               Hey, I'm Jahnavi — a Product Builder from Toronto.
             </h1>
           </div>
-
           <p className="max-w-[560px] text-base leading-7 text-neutral-700">
             I build AI-enabled workflows and internal/external SaaS experiences — from discovery and user research
             through delivery and GTM. Here's my{" "}
@@ -23,11 +22,7 @@ export default function HomePage() {
             </Link>
             .
           </p>
-
-          <a
-            className="inline-block underline underline-offset-4 font-bold"
-            href="mailto:jahnavi.rao0104@gmail.com"
-          >
+          <a className="inline-block underline underline-offset-4 font-bold" href="mailto:jahnavi.rao0104@gmail.com">
             jahnavi.rao0104@gmail.com
           </a>
         </div>
@@ -54,10 +49,7 @@ export default function HomePage() {
                   <p className="mt-2 text-sm leading-6 text-neutral-700">{item.oneLiner}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {item.tags.map((t) => (
-                      <span
-                        key={t}
-                        className="border-2 border-neutral-900 px-2 py-0.5 text-xs font-bold"
-                      >
+                      <span key={t} className="border-2 border-neutral-900 px-2 py-0.5 text-xs font-bold">
                         {t}
                       </span>
                     ))}
