@@ -66,10 +66,10 @@ export default function AboutPage() {
             </P>
             <Spacer />
             <P>
-              My background spans software engineering (AWS, NCR) and product management (Ontario Centre of
-              Innovation), which means I'm equally comfortable reading an API spec and running a stakeholder
-              prioritization session. I've shipped on platforms processing 10M+ daily requests and on grant systems
-              that directly impact Canada's innovation ecosystem.
+              My background spans software engineering (AWS, NCR) and product management in the public sector,
+              which means I'm equally comfortable reading an API spec and running a stakeholder prioritization
+              session. I've shipped on platforms processing 10M+ daily requests and on platforms that directly
+              impact how organizations access public funding.
             </P>
             <Spacer />
             <P>
@@ -92,7 +92,7 @@ export default function AboutPage() {
             <LeftLabel text="Experience." />
           </div>
           <RightPanel>
-            <H3>Ontario Centre of Innovation — Technical Product Manager</H3>
+            <H3>Public Sector Technology Platform — Technical Product Manager</H3>
             <P>Toronto, Canada · Dec 2022 – Present</P>
             <Spacer />
             <Ul items={[
@@ -150,7 +150,7 @@ export default function AboutPage() {
             </P>
             <Spacer />
             <P>
-              <strong>AccessOCI AI Assistant</strong> — AI chatbot embedded in a grant platform to improve
+              <strong>Grant Platform AI Assistant</strong> — AI chatbot embedded in a grant platform to improve
               navigation, Q&A, and submission completion. Increased user engagement by 25% and drove a 15% uplift in
               grant completions.
             </P>

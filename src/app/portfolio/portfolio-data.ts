@@ -37,12 +37,12 @@ export const portfolioItems: PortfolioItem[] = [
   {
     slug: "accessoci-ai-assistant",
     tags: "AI assistant · Workflow automation",
-    title: "AccessOCI AI Assistant",
+    title: "Grant Platform AI Assistant",
     blurb:
       "Embedded an AI assistant in a grant platform to improve navigation, Q&A, and submission completion — increasing user engagement by 25% and driving a 15% uplift in grant submissions.",
     href: "/case-studies/accessoci-ai-assistant",
     imageSrc: "/images/accessoci-ai.png",
-    imageAlt: "AccessOCI AI Assistant preview",
+    imageAlt: "Grant Platform AI Assistant preview",
     imageSide: "right",
   },
   {

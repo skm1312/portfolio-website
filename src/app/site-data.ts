@@ -31,8 +31,8 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "accessoci-ai-assistant",
-    org: "Ontario Centre of Innovation",
-    title: "AccessOCI AI Assistant",
+    org: "Public Sector Technology Platform",
+    title: "Grant Platform AI Assistant",
     productType: "AI-Powered Web Platform",
     userBase: "Grant Applicants, Innovation Ecosystem Stakeholders",
     oneLiner:
@@ -41,7 +41,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "grant-workflow-modernization",
-    org: "Ontario Centre of Innovation",
+    org: "Public Sector Technology Platform",
     title: "Grant Workflow Modernization",
     productType: "Internal Platform · Workflow Automation",
     userBase: "Grant Reviewers, Applicants, Business Development Team",

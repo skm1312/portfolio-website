@@ -46,7 +46,7 @@ export default function ResumePage() {
             <LeftLabel text="Experience." />
           </div>
           <RightPanel>
-            <H3>Ontario Centre of Innovation — Technical Product Manager</H3>
+            <H3>Public Sector Technology Platform — Technical Product Manager</H3>
             <Meta>Toronto, Canada · Dec 2022 – Present</Meta>
             <ul className="list-disc pl-4 space-y-1">
               <li>Redesigned grant workflow using automation & user research — 40% faster turnaround, 3× processing capacity YoY</li>

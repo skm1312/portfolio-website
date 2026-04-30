@@ -56,7 +56,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         ) : cs.slug === "hcp-brand-portal" ? (
           <HCPBrandPortalContent />
         ) : cs.slug === "accessoci-ai-assistant" ? (
-          <AccessOCIContent />
+          <GrantPlatformAIContent />
         ) : cs.slug === "grant-workflow-modernization" ? (
           <GrantWorkflowContent />
         ) : (
@@ -268,17 +268,18 @@ function HCPBrandPortalContent() {
 }
 
 /* ─────────────────────────────────────────
-   3. AccessOCI AI Assistant
+   3. Grant Platform AI Assistant
 ───────────────────────────────────────── */
 
-function AccessOCIContent() {
+function GrantPlatformAIContent() {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-[380px_1fr]">
 
       <StickyRow label="The Product">
         <p>
-          AccessOCI is Ontario Centre of Innovation's grant management platform — the primary interface through which
-          innovators, startups, and researchers discover, apply for, and manage government-backed funding programs.
+          The Grant Platform is a web platform that serves as the primary interface through which organizations
+          discover, apply for, and manage funding programs — spanning the full lifecycle from discovery through
+          decision.
         </p>
         <p>
           The AI Assistant is an embedded chatbot that helps applicants navigate program eligibility, find the right
@@ -292,7 +293,7 @@ function AccessOCIContent() {
         <p>
           As Technical Product Manager, I owned the full delivery lifecycle — from discovery and requirement
           definition through sprint execution, stakeholder alignment, and go-to-market. I worked directly with
-          engineering, design, and OCI's executive team to define scope, set success metrics, and manage
+          engineering, design, and the executive team to define scope, set success metrics, and manage
           prioritization trade-offs across the delivery timeline.
         </p>
       </StickyRow>
@@ -339,7 +340,7 @@ function GrantWorkflowContent() {
 
       <StickyRow label="The Product">
         <p>
-          OCI's grant management platform processes hundreds of funding applications per year across multiple
+          The grant management platform processes hundreds of funding applications per year across multiple
           innovation programs. The intake and review workflow — the end-to-end path from application submission
           through reviewer assignment, evaluation, and decision — was built on a fragmented, largely manual process
           that created bottlenecks at every handoff.
