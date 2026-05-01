@@ -10,7 +10,7 @@ export default function HomePage() {
       <PageShell>
         <div className="space-y-6">
           <div className="max-w-[560px]">
-            <h1 className="text-5xl font-extrabold tracking-tight leading-[1.1]">
+            <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.1]">
               Hey, I'm Jahnavi — a Product Builder from Toronto.
             </h1>
           </div>
@@ -31,7 +31,7 @@ export default function HomePage() {
       {/* Featured Work */}
       <PageShell>
         <div className="space-y-8">
-          <h2 className="text-4xl font-extrabold tracking-tight">Featured Work.</h2>
+          <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight">Featured Work.</h2>
 
           <div className="space-y-6">
             {featuredWork.map((item) => (

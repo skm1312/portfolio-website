@@ -134,7 +134,7 @@ function SubH({ children }: { children: React.ReactNode }) {
 
 function IntelligentAgreementHubContent() {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-[380px_1fr]">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-[240px_1fr] lg:grid-cols-[380px_1fr]">
 
       <StickyRow label="The Product">
         <p>
@@ -205,7 +205,7 @@ function IntelligentAgreementHubContent() {
 
 function HCPBrandPortalContent() {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-[380px_1fr]">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-[240px_1fr] lg:grid-cols-[380px_1fr]">
 
       <StickyRow label="The Product">
         <p>
@@ -273,7 +273,7 @@ function HCPBrandPortalContent() {
 
 function GrantPlatformAIContent() {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-[380px_1fr]">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-[240px_1fr] lg:grid-cols-[380px_1fr]">
 
       <StickyRow label="The Product">
         <p>
@@ -336,7 +336,7 @@ function GrantPlatformAIContent() {
 
 function GrantWorkflowContent() {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-[380px_1fr]">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-[240px_1fr] lg:grid-cols-[380px_1fr]">
 
       <StickyRow label="The Product">
         <p>
@@ -404,7 +404,7 @@ function GrantWorkflowContent() {
 
 function PlaceholderContent() {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-[380px_1fr]">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-[240px_1fr] lg:grid-cols-[380px_1fr]">
       <StickyRow label="The Product">
         <p>Add context — what is this product, who uses it, and why does it matter?</p>
       </StickyRow>

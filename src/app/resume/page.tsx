@@ -4,7 +4,7 @@ import { PageShell, PageTitle } from "../components/Page";
 function LeftLabel({ text }: { text: string }) {
   return (
     <ShadowBox direction="tl" offset={6}>
-      <div className="h-[180px] flex items-center justify-center">
+      <div className="h-auto min-h-[80px] md:h-[180px] flex items-center justify-center py-6 md:py-0">
         <div className="text-3xl font-extrabold tracking-tight text-center px-4">{text}</div>
       </div>
     </ShadowBox>
@@ -39,7 +39,7 @@ export default function ResumePage() {
       </PageShell>
 
       <PageShell>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-[380px_1fr]">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-[240px_1fr] lg:grid-cols-[380px_1fr]">
 
           {/* Experience */}
           <div className="md:sticky md:top-28 self-start">

@@ -11,5 +11,5 @@ export function PageShell({
 }
 
 export function PageTitle({ children }: { children: React.ReactNode }) {
-  return <h1 className="text-5xl font-extrabold tracking-tight">{children}</h1>;
+  return <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight">{children}</h1>;
 }

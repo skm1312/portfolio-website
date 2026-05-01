@@ -71,7 +71,7 @@ export default function PortfolioPage() {
       </PageShell>
 
       <PageShell>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-[380px_1fr]">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-[240px_1fr] lg:grid-cols-[380px_1fr]">
           {portfolioItems.map((item) => (
             <PortfolioRow key={item.slug} {...item} />
           ))}
