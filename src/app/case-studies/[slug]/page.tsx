@@ -24,14 +24,14 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
   return (
     <div className="space-y-10">
       <PageShell>
-        <p className="text-xs font-extrabold text-purple-800 uppercase tracking-widest mb-4">{study.status} · {study.org}</p>
+        <p className="eyebrow mb-4">{study.status} · {study.org}</p>
         <PageTitle>{study.title}</PageTitle>
         <p className="mt-5 max-w-3xl text-base leading-7 text-neutral-700">{study.oneLiner}</p>
       </PageShell>
       <PageShell>
         <ShadowBox direction="tl"><div className="grid sm:grid-cols-2 gap-5 bg-neutral-100 p-6">
-          <div><h2 className="text-xs uppercase font-extrabold text-neutral-600 mb-2">Product</h2><p className="text-sm font-bold">{study.productType}</p></div>
-          <div><h2 className="text-xs uppercase font-extrabold text-neutral-600 mb-2">Users</h2><p className="text-sm font-bold">{study.userBase}</p></div>
+          <div><h2 className="eyebrow mb-2">Product</h2><p className="text-sm font-bold">{study.productType}</p></div>
+          <div><h2 className="eyebrow mb-2">Users</h2><p className="text-sm font-bold">{study.userBase}</p></div>
         </div></ShadowBox>
       </PageShell>
       {study.metrics && (
@@ -45,7 +45,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           {section.points && <ul className="list-disc pl-5 space-y-3">{section.points.map((point) => <li key={point}>{point}</li>)}</ul>}
         </ProfileRow>
       ))}
-      <Link className="inline-block underline underline-offset-4 font-bold" href="/portfolio">← Back to portfolio</Link>
+      <Link className="text-link inline-block" href="/portfolio">← Back to portfolio</Link>
     </div>
   );
 }

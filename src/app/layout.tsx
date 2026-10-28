@@ -4,8 +4,8 @@ import Nav from "./nav";
 
 export const metadata: Metadata = {
   title: "Jahnavi Uppuluri | AI Product Manager",
-  description: "Product management and software engineering across AI workflows, API integrations, and enterprise platforms. Explore Jahnavi Uppuluri’s work at Scotiabank, OCI, and AWS.",
-  metadataBase: new URL("https://jahnaviuppuluri.com"),
+  description: "Jahnavi Uppuluri is an AI Product Manager with PMP and PSPO I certifications and a software engineering background. Explore her experience and projects.",
+  metadataBase: new URL("https://jahnaviproduct.com"),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

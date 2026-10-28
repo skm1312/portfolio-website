@@ -22,7 +22,7 @@ export function Experience() {
       {experience.map((job) => (
         <article key={job.company} className="space-y-2">
           <h3 className="font-extrabold text-base">{job.company}</h3>
-          <p className="font-bold">{job.role}{"type" in job ? ` · ${job.type}` : ""}</p>
+          <p className="font-bold">{job.role}</p>
           <p className="text-neutral-600 text-xs">{job.location} · {job.dates}</p>
           {job.points.length > 0 && (
             <ul className="list-disc pl-5 space-y-2">
@@ -56,6 +56,7 @@ export function Education() {
 export function Certifications() {
   return (
     <>
+      <p><strong>Professional Scrum Product Owner I (PSPO I)</strong><br />Scrum.org · Sep 2026</p>
       <p><strong>Project Management Professional (PMP)</strong><br />PMI · July 2024</p>
       <p><strong>Product Manager Certification</strong><br />BrainStation · Oct 2022</p>
       <p><strong>Acoustic Event Detection using Graph Signals</strong><br />IEEE TENCON · Dec 2017</p>

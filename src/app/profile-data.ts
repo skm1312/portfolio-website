@@ -3,20 +3,19 @@ export const profile = {
   email: "jahnavi.rao0104@gmail.com",
   phone: "647 336 6219",
   linkedin: "https://www.linkedin.com/in/phany-jahnavi-uppuluri-15459420a/",
-  summary: "Product manager with a software engineering background and experience across AI workflows, APIs, and enterprise platforms. I bring user research and technical delivery together to build products that make complex work easier.",
+  summary: "I’m a product manager with a software engineering background, building AI workflows and enterprise platforms.",
 };
 
 export const experience = [
   {
     company: "Scotiabank",
     role: "AI Product Manager",
-    type: "Full time",
     location: "Toronto, Canada",
     dates: "Aug 2026 to Present",
     points: [
       "Defined AI evaluation metrics for accuracy, hallucinations, edge cases, and model drift, improving response quality by 68% and strengthening production readiness.",
       "Authored product requirements for LLM prompts, RAG workflows, safety guardrails, and data governance, translating business needs into technical requirements.",
-      "Led prompt and RAG experiments that improved task success by 46% and reduced hallucinations by 76%.",
+      "Led prompt and RAG experiments, comparing response quality and task completion across iterations to improve task success by 46% and reduce hallucinations by 76%.",
       "Delivered AI and bot automations that reduced manual work and contributed to operational expense reductions exceeding $20M.",
     ],
   },
@@ -29,8 +28,8 @@ export const experience = [
       "Redesigned grant application workflows using automation and user research, reducing turnaround time by 40% and tripling annual processing capacity.",
       "Led delivery of an AI chatbot, increasing user engagement by 25% and grant and event submission completions by 15%.",
       "Led API and backend integrations for SugarCRM and SugarConnect, enabling data flow across applications and eliminating manual handoffs for eight teams.",
-      "Owned a rolling roadmap across three workstreams and led quarterly prioritization with engineering, design, and executive stakeholders.",
-      "Used continuous user research and funnel analysis in Mixpanel and Hotjar to reduce low value feature work by 20%.",
+      "Owned a rolling roadmap across three workstreams, bringing engineering, design, and executive stakeholders together for quarterly decisions on priorities and delivery sequencing.",
+      "Used continuous user research and funnel analysis in Mixpanel and Hotjar to identify friction and inform prioritization, reducing low value feature work by 20%.",
     ],
   },
   {
@@ -41,16 +40,16 @@ export const experience = [
     points: [
       "Partnered with product, UX, and ML teams to ship 12 major releases per year on a platform processing over 10 million daily authentication requests, reducing feature cycle time by 30%.",
       "Delivered secure identity microservices and APIs supporting account creation and reliable integrations at AWS scale.",
-      "Coordinated release management, security compliance gates, and quality assurance across delivery teams.",
-      "Defined success metrics and monitored KPIs across more than five concurrent identity workstreams to inform prioritization and roadmap visibility.",
+      "Coordinated release management, security compliance gates, and quality assurance across delivery teams, balancing delivery speed with platform reliability and security requirements.",
+      "Defined success metrics and monitored KPIs across more than five identity workstreams, helping product and engineering teams prioritize delivery and maintain executive roadmap visibility.",
     ],
   },
   { company: "NCR Corporation", role: "Software Developer", location: "Hyderabad, India", dates: "Apr 2018 to Aug 2019", points: [] },
 ];
 
 export const skillGroups = [
-  { title: "AI", text: "LLMs · RAG · Prompt experimentation · Accuracy and hallucination metrics · Edge case evaluation · Model drift · Safety guardrails · Data governance" },
   { title: "Product", text: "User research · Product requirements · Roadmaps · Prioritization · Stakeholder alignment · Agile · Scrum · Jira · Asana · Confluence · Figma · Miro · Productboard" },
-  { title: "Data and analytics", text: "SQL · Mixpanel · Hotjar · Tableau · Power BI · A/B testing · Funnel analysis" },
-  { title: "Engineering", text: "REST APIs · Microservices · OAuth2/OIDC · Java · Python · AWS · Azure App Services, Functions, and Storage · CI/CD · Kubernetes on AKS · Postman · FHIR fundamentals" },
+  { title: "AI", text: "LLMs · RAG · Prompt experimentation · Model evaluation · Hallucination analysis · Edge case analysis · Model drift · Safety guardrails · Data governance" },
+  { title: "Data", text: "SQL · Mixpanel · Hotjar · Tableau · Power BI · A/B testing · Funnel analysis · FHIR fundamentals" },
+  { title: "Engineering", text: "Java · Python · REST APIs · Microservices · OAuth2/OIDC · AWS · Azure · CI/CD · Kubernetes · Postman" },
 ];

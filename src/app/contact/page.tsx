@@ -11,8 +11,8 @@ function Row({
 }) {
   return (
     <div className="grid grid-cols-1 gap-2 sm:grid-cols-[140px_1fr] sm:items-baseline">
-      <div className="text-sm font-bold text-neutral-900">{label}</div>
-      <div className="text-base text-neutral-800">{children}</div>
+      <div className="eyebrow">{label}</div>
+      <div className="min-w-0 text-base text-neutral-800">{children}</div>
     </div>
   );
 }
@@ -32,12 +32,12 @@ export default function ContactPage() {
 
       <PageShell>
         <ShadowBox direction="tl" offset={6}>
-          <div className="bg-neutral-100 p-8">
+          <div className="bg-neutral-100 p-6 sm:p-8">
             <div className="space-y-6">
               <Row label="Email">
                 <a
                   href={`mailto:${email}`}
-                  className="font-bold underline underline-offset-4"
+                  className="text-link break-words"
                 >
                   {email}
                 </a>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                   href={linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="font-bold underline underline-offset-4"
+                  className="text-link"
                 >
                   Phany Jahnavi Uppuluri
                 </a>

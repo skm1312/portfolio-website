@@ -20,6 +20,7 @@ export default function ShadowBox({
     <div className={`relative ${className}`}>
       {/* underlay */}
       <div
+        aria-hidden="true"
         className="absolute inset-0 border-2 border-neutral-900 bg-white"
         style={{ transform: `translate(${dx}px, ${dy}px)` }}
       />

@@ -18,18 +18,18 @@ export default function AboutPage() {
         <div>
           <h3 className="font-extrabold">Healthcare Professional Portal</h3>
           <p>An independent case study on registration, identity matching, and profile updates across a professional portal and a master data platform.</p>
-          <Link href="/case-studies/hcp-brand-portal" className="inline-block font-bold underline underline-offset-4">Read the case study →</Link>
+          <Link href="/case-studies/hcp-brand-portal" className="text-link inline-block">Read the case study →</Link>
         </div>
         <div>
           <h3 className="font-extrabold">The Intelligent Agreement Hub</h3>
           <p>A product proposal for bringing agreement creation, signature, and storage into one workflow, with clear ownership of legal rules and company policy.</p>
-          <Link href="/case-studies/intelligent-agreement-hub" className="inline-block font-bold underline underline-offset-4">Read the proposal →</Link>
+          <Link href="/case-studies/intelligent-agreement-hub" className="text-link inline-block">Read the proposal →</Link>
         </div>
       </ProfileRow>
       <ProfileRow title="Skills."><Skills /></ProfileRow>
       <ProfileRow title="Education."><Education /></ProfileRow>
       <ProfileRow title="Credentials."><Certifications /></ProfileRow>
-      <Link href="/portfolio" className="inline-block underline underline-offset-4 font-bold">Explore the portfolio →</Link>
+      <Link href="/portfolio" className="text-link inline-block">Explore the portfolio →</Link>
     </div>
   );
 }
