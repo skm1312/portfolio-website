@@ -2,78 +2,35 @@ import Link from "next/link";
 import { PageShell, PageTitle } from "../components/Page";
 import ShadowBox from "../components/ShadowBox";
 import { portfolioItems } from "./portfolio-data";
-import { caseStudies } from "../site-data";
-
-function LeftLabel({ text }: { text: string }) {
-  return (
-    <ShadowBox direction="tl" offset={6}>
-      <div className="h-[200px] flex items-center justify-center">
-        <div className="text-xl font-extrabold tracking-tight text-center px-4 leading-snug">{text}</div>
-      </div>
-    </ShadowBox>
-  );
-}
-
-function RightPanel({ children }: { children: React.ReactNode }) {
-  return (
-    <ShadowBox direction="tl" offset={6}>
-      <div className="bg-neutral-100 p-6">{children}</div>
-    </ShadowBox>
-  );
-}
-
-function PortfolioRow({ slug, tags, title, blurb, href }: (typeof portfolioItems)[number]) {
-  const isExternal = href.startsWith("http") || href.endsWith(".pdf");
-  // Pull richer meta from caseStudies if available
-  const cs = caseStudies.find((c) => c.slug === slug);
-
-  return (
-    <>
-      <div className="md:sticky md:top-28 self-start">
-        <LeftLabel text={title} />
-      </div>
-      <RightPanel>
-        {cs && (
-          <div className="grid grid-cols-2 gap-3 mb-4 pb-4 border-b border-neutral-300">
-            <div>
-              <div className="text-xs font-extrabold uppercase tracking-widest text-neutral-500 mb-0.5">Product Type</div>
-              <div className="text-xs font-bold text-neutral-800">{cs.productType}</div>
-            </div>
-            <div>
-              <div className="text-xs font-extrabold uppercase tracking-widest text-neutral-500 mb-0.5">User Base</div>
-              <div className="text-xs font-bold text-neutral-800">{cs.userBase}</div>
-            </div>
-          </div>
-        )}
-        <div className="text-xs font-bold text-neutral-500 uppercase tracking-wider mb-3">{tags}</div>
-        <p className="text-sm leading-7 text-neutral-800">{blurb}</p>
-        <div className="mt-5">
-          {isExternal ? (
-            <a href={href} target="_blank" rel="noreferrer" className="font-extrabold underline underline-offset-4 text-sm">
-              View Work →
-            </a>
-          ) : (
-            <Link href={href} className="font-extrabold underline underline-offset-4 text-sm">
-              View Work →
-            </Link>
-          )}
-        </div>
-      </RightPanel>
-    </>
-  );
-}
 
 export default function PortfolioPage() {
   return (
     <div className="space-y-10">
       <PageShell>
-        <PageTitle>Product Portfolio.</PageTitle>
+        <PageTitle>Product portfolio.</PageTitle>
+        <p className="mt-5 max-w-2xl text-neutral-700 leading-7">A selection of AI workflows, platform improvements, and integration projects. These include professional experience and independent product case studies.</p>
       </PageShell>
-
       <PageShell>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-[240px_1fr] lg:grid-cols-[380px_1fr]">
+        <div className="space-y-8">
           {portfolioItems.map((item) => (
-            <PortfolioRow key={item.slug} {...item} />
+            <ShadowBox key={item.slug} direction="tl">
+              <article className="grid gap-6 md:grid-cols-[230px_1fr] p-6 sm:p-8 bg-neutral-100">
+                <div className="space-y-3">
+                  <p className="text-xs font-bold uppercase tracking-widest text-neutral-600">{item.org}</p>
+                  <p className="text-xs font-bold text-purple-800">{item.status}</p>
+                  <h2 className="text-xl font-extrabold tracking-tight"><Link href={item.href} className="hover:underline underline-offset-4">{item.title}</Link></h2>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-sm leading-7">{item.oneLiner}</p>
+                  <div className="grid sm:grid-cols-2 gap-4 text-xs border-t border-neutral-300 pt-4">
+                    <div><h3 className="font-extrabold mb-1">Product</h3><p>{item.productType}</p></div>
+                    <div><h3 className="font-extrabold mb-1">Users</h3><p>{item.userBase}</p></div>
+                  </div>
+                  <div className="flex flex-wrap gap-2">{item.tags.map((tag) => <span key={tag} className="border border-neutral-900 px-2 py-1 text-xs font-bold">{tag}</span>)}</div>
+                  <Link href={item.href} className="inline-block font-bold underline underline-offset-4 text-sm">View work →</Link>
+                </div>
+              </article>
+            </ShadowBox>
           ))}
         </div>
       </PageShell>

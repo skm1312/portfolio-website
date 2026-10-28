@@ -6,8 +6,9 @@ import { useState } from "react";
 import ShadowBox from "./components/ShadowBox";
 
 const links = [
-  { href: "/about", label: "About & Projects" },
-  { href: "/portfolio", label: "Product Portfolio" },
+  { href: "/about", label: "About" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/resume", label: "Resume" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -29,7 +30,7 @@ export default function Nav() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-3">
+          <nav aria-label="Main navigation" className="hidden md:flex items-center gap-3">
             {links.map((l) => {
               const active = isActive(l.href);
 
@@ -42,7 +43,7 @@ export default function Nav() {
               return active ? (
                 <div key={l.href} className="inline-block">
                   <ShadowBox direction="tl" offset={6} className="inline-block">
-                    <Link href={l.href} className="block">
+                    <Link href={l.href} aria-current="page" className="block">
                       {linkInner}
                     </Link>
                   </ShadowBox>
@@ -64,6 +65,8 @@ export default function Nav() {
             className="md:hidden flex flex-col justify-center gap-1.5 p-2"
             onClick={() => setOpen(!open)}
             aria-label="Toggle menu"
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
           >
             <span
               className={`block h-0.5 w-6 bg-neutral-900 transition-transform duration-200 ${open ? "translate-y-2 rotate-45" : ""}`}
@@ -80,13 +83,14 @@ export default function Nav() {
 
       {/* Mobile menu dropdown */}
       {open && (
-        <div className="md:hidden border-t-2 border-neutral-900 bg-white">
+        <nav id="mobile-navigation" aria-label="Mobile navigation" className="md:hidden border-t-2 border-neutral-900 bg-white">
           {links.map((l) => {
             const active = isActive(l.href);
             return (
               <Link
                 key={l.href}
                 href={l.href}
+                aria-current={active ? "page" : undefined}
                 onClick={() => setOpen(false)}
                 className={`block px-4 py-4 text-base font-bold border-b border-neutral-200 last:border-b-0 ${
                   active ? "bg-neutral-100" : "hover:bg-neutral-50"
@@ -96,7 +100,7 @@ export default function Nav() {
               </Link>
             );
           })}
-        </div>
+        </nav>
       )}
     </header>
   );

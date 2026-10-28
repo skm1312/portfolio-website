@@ -3,8 +3,8 @@ import "./globals.css";
 import Nav from "./nav";
 
 export const metadata: Metadata = {
-  title: "Jahnavi Uppuluri | Product",
-  description: "Product portfolio and case studies.",
+  title: "Jahnavi Uppuluri | AI Product Manager",
+  description: "Product management and software engineering across AI workflows, API integrations, and enterprise platforms. Explore Jahnavi Uppuluri’s work at Scotiabank, OCI, and AWS.",
   metadataBase: new URL("https://jahnaviuppuluri.com"),
 };
 

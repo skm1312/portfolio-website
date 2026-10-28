@@ -24,7 +24,7 @@ export default function ShadowBox({
         style={{ transform: `translate(${dx}px, ${dy}px)` }}
       />
       {/* top box */}
-      <div className="relative border-2 border-neutral-900 bg-white">
+      <div className="relative h-full border-2 border-neutral-900 bg-white">
         {children}
       </div>
     </div>

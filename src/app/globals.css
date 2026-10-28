@@ -3,3 +3,33 @@
 :root {
   color-scheme: light;
 }
+
+button, select, summary {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid #7e22ce;
+  outline-offset: 4px;
+}
+
+@media print {
+  @page { size: A4; margin: 14mm; }
+  header, footer { display: none; }
+  main { max-width: none; padding: 0; }
+  .resume-page { font-size: 10pt; }
+  .resume-page > * + * { margin-top: 10pt !important; }
+  .resume-page .space-y-8 > * + * { margin-top: 10pt; }
+  .resume-page .space-y-5 > * + * { margin-top: 6pt; }
+  .resume-page .space-y-2 > * + * { margin-top: 3pt; }
+  .resume-page p, .resume-page li { font-size: 9pt; line-height: 1.4; }
+  .resume-page .profile-row { display: block; }
+  .resume-page .profile-row > div { position: static; }
+  .resume-page .profile-row > div > div > div.absolute { display: none; }
+  .resume-page .profile-row > div > div > div.relative { border: 0; }
+  .resume-page h1 { font-size: 24pt; }
+  .resume-page h2 { padding: 5pt 0 4pt; font-size: 12pt; }
+  .resume-page .profile-row > div:last-child > div > div.relative > div { padding: 0; background: white; }
+  .resume-page article { break-inside: avoid; }
+  .resume-page .profile-row p { break-inside: avoid; }
+}
