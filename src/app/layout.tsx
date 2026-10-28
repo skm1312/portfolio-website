@@ -4,7 +4,7 @@ import Nav from "./nav";
 
 export const metadata: Metadata = {
   title: "Jahnavi Uppuluri | AI Product Manager",
-  description: "Jahnavi Uppuluri is an AI Product Manager with PMP and PSPO I certifications and a software engineering background. Explore her experience and projects.",
+  description: "AI product management across RPA, agentic workflows, RAG, LLM evaluation, and API platforms. Explore Jahnavi Uppuluri’s experience and technical case studies.",
   metadataBase: new URL("https://jahnaviproduct.com"),
 };
 

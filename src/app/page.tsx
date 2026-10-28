@@ -11,7 +11,7 @@ export default function HomePage() {
           <div className="space-y-6">
             <p className="eyebrow">AI product management · Toronto</p>
             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight leading-[1.12]">Hi, I’m Jahnavi.<br />I turn complex workflows into useful products.</h1>
-            <p className="max-w-xl text-base leading-7 text-neutral-700">I work with users, engineers, and business teams to understand problems and build practical solutions. My background spans AI product management at Scotiabank, public sector platforms, and software engineering at AWS.</p>
+            <p className="max-w-xl text-base leading-7 text-neutral-700">I work with engineering teams on RPA, LLM workflows, prompt design, and RAG, using evaluation results to guide delivery. My background spans banking automation, public sector platforms, and identity services at AWS.</p>
             <div className="flex flex-wrap items-center gap-5">
               <Link className="button-primary" href="/portfolio">Explore my work <span aria-hidden="true">↗</span></Link>
               <Link className="text-link" href="/resume">View resume</Link>
@@ -23,7 +23,7 @@ export default function HomePage() {
               {[
                 ["01", "Start with the task", "Understand the people using the product and what gets in their way."],
                 ["02", "Choose what matters", "Set clear priorities and measures that connect the work to a useful outcome."],
-                ["03", "Close the loop", "Ship, learn from real usage, and improve the next iteration."],
+                ["03", "Close the loop", "Use evaluation results and product analytics to guide the next iteration."],
               ].map(([number, title, detail]) => (
                 <div key={number} className="flex gap-4">
                   <span className="font-extrabold text-sm pt-1 text-neutral-900">{number}</span>

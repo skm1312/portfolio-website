@@ -8,8 +8,8 @@ export default function AboutPage() {
     <div className="space-y-10">
       <PageShell><PageTitle>About me.</PageTitle><p className="mt-5 max-w-2xl leading-7 text-neutral-700">{profile.summary}</p></PageShell>
       <ProfileRow title="My approach.">
-        <p>I’m Jahnavi, an AI Product Manager based in Toronto. I started in software engineering at NCR and AWS before moving into product management. That background helps me work through API designs, delivery constraints, and AI quality questions with the people building the product.</p>
-        <p>At Scotiabank, I focus on AI evaluation, prompt and RAG experimentation, and automation. Previously, at Ontario Centre of Innovation, I led AI chatbot delivery, grant workflow improvements, and enterprise integrations.</p>
+        <p>I’m Jahnavi, an AI Product Manager based in Toronto. I started in software engineering at NCR and AWS before moving into product management. That background helps me work through API contracts, prompt design, retrieval context, and evaluation criteria with the people building the product.</p>
+        <p>At Scotiabank, I work on RPA and agentic workflows, prompt engineering, RAG experiments, and LLM evaluation within banking infrastructure. At Ontario Centre of Innovation, I shipped an AI chatbot for program Q&A and submission guidance alongside API integrations and workflow automation.</p>
         <p>I like product work where the outcome is tangible: someone completes a task more reliably, a team spends less time on manual handoffs, or a quality issue becomes easier to understand and fix.</p>
         <p>I’m also interested in healthcare technology and have been learning about interoperability concepts such as FHIR.</p>
       </ProfileRow>

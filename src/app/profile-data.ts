@@ -3,7 +3,7 @@ export const profile = {
   email: "jahnavi.rao0104@gmail.com",
   phone: "647 336 6219",
   linkedin: "https://www.linkedin.com/in/phany-jahnavi-uppuluri-15459420a/",
-  summary: "I’m a product manager with a software engineering background, building AI workflows and enterprise platforms.",
+  summary: "I’m a product manager with a software engineering background, working across LLM workflows, RAG, model evaluation, and API platforms.",
 };
 
 export const experience = [
@@ -13,10 +13,10 @@ export const experience = [
     location: "Toronto, Canada",
     dates: "Aug 2026 to Present",
     points: [
-      "Defined AI evaluation metrics for accuracy, hallucinations, edge cases, and model drift, improving response quality by 68% and strengthening production readiness.",
-      "Authored product requirements for LLM prompts, RAG workflows, safety guardrails, and data governance, translating business needs into technical requirements.",
-      "Led prompt and RAG experiments, comparing response quality and task completion across iterations to improve task success by 46% and reduce hallucinations by 76%.",
-      "Delivered AI and bot automations that reduced manual work and contributed to operational expense reductions exceeding $20M.",
+      "Delivered RPA automations and LLM workflows within banking infrastructure, reducing manual processing and contributing to operational expense reductions exceeding $20M.",
+      "Led prompt engineering and RAG experiments across retrieval context and response generation, improving task success by 46% and reducing hallucinations by 76%.",
+      "Defined LLM evaluation criteria for factual accuracy, hallucinations, edge cases, and model drift, improving response quality by 68% and supporting production readiness.",
+      "Specified agentic workflow orchestration, RAG requirements, safety guardrails, and data governance controls for production delivery in a banking environment.",
     ],
   },
   {
@@ -25,11 +25,11 @@ export const experience = [
     location: "Toronto, Canada",
     dates: "Dec 2022 to Mar 2026",
     points: [
-      "Redesigned grant application workflows using automation and user research, reducing turnaround time by 40% and tripling annual processing capacity.",
-      "Led delivery of an AI chatbot, increasing user engagement by 25% and grant and event submission completions by 15%.",
-      "Led API and backend integrations for SugarCRM and SugarConnect, enabling data flow across applications and eliminating manual handoffs for eight teams.",
-      "Owned a rolling roadmap across three workstreams, bringing engineering, design, and executive stakeholders together for quarterly decisions on priorities and delivery sequencing.",
-      "Used continuous user research and funnel analysis in Mixpanel and Hotjar to identify friction and inform prioritization, reducing low value feature work by 20%.",
+      "Redesigned grant intake and review workflows through automation and user research, reducing turnaround time by 40% and tripling annual processing capacity.",
+      "Shipped an AI chatbot for program Q&A and submission guidance, increasing engagement by 25% and grant and event submission completions by 15%.",
+      "Led API integrations and backend data flows for SugarCRM and SugarConnect, eliminating manual data handoffs across eight teams.",
+      "Owned a roadmap across three platform workstreams, translating quarterly priorities into delivery plans with engineering, design, and executive stakeholders.",
+      "Used Mixpanel, Hotjar, and user research to analyze funnel dropoffs and prioritize workflow changes, reducing low value feature work by 20%.",
     ],
   },
   {
@@ -38,10 +38,10 @@ export const experience = [
     location: "Toronto, Canada",
     dates: "Sep 2021 to Dec 2022",
     points: [
-      "Partnered with product, UX, and ML teams to ship 12 major releases per year on a platform processing over 10 million daily authentication requests, reducing feature cycle time by 30%.",
-      "Delivered secure identity microservices and APIs supporting account creation and reliable integrations at AWS scale.",
-      "Coordinated release management, security compliance gates, and quality assurance across delivery teams, balancing delivery speed with platform reliability and security requirements.",
-      "Defined success metrics and monitored KPIs across more than five identity workstreams, helping product and engineering teams prioritize delivery and maintain executive roadmap visibility.",
+      "Partnered with product, UX, and ML teams on 12 major platform releases per year, reducing feature cycle time by 30%.",
+      "Developed identity microservices and API interfaces for account creation and system integration on a platform processing over 10 million daily authentication requests.",
+      "Coordinated release management, security compliance gates, and quality assurance across identity services, balancing platform reliability with delivery timelines.",
+      "Defined service success metrics and monitored KPIs across more than five identity workstreams to support release prioritization and executive roadmap reporting.",
     ],
   },
   { company: "NCR Corporation", role: "Software Developer", location: "Hyderabad, India", dates: "Apr 2018 to Aug 2019", points: [] },
@@ -49,7 +49,7 @@ export const experience = [
 
 export const skillGroups = [
   { title: "Product", text: "User research · Product requirements · Roadmaps · Prioritization · Stakeholder alignment · Agile · Scrum · Jira · Asana · Confluence · Figma · Miro · Productboard" },
-  { title: "AI", text: "LLMs · RAG · Prompt experimentation · Model evaluation · Hallucination analysis · Edge case analysis · Model drift · Safety guardrails · Data governance" },
+  { title: "AI", text: "LLMs · RAG · Prompt engineering · Agentic workflows · LLM evaluation · Hallucination analysis · Edge case analysis · Model drift · Guardrails · RPA" },
   { title: "Data", text: "SQL · Mixpanel · Hotjar · Tableau · Power BI · A/B testing · Funnel analysis · FHIR fundamentals" },
   { title: "Engineering", text: "Java · Python · REST APIs · Microservices · OAuth2/OIDC · AWS · Azure · CI/CD · Kubernetes · Postman" },
 ];
