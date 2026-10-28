@@ -6,6 +6,15 @@ export const profile = {
   summary: "I’m a product manager with a software engineering background, working across LLM workflows, RAG, model evaluation, and API platforms.",
 };
 
+export const publication = {
+  title: "Acoustic Event Classification using Graph Signals",
+  venue: "IEEE TENCON",
+  date: "Dec 2017",
+  href: "https://ieeexplore.ieee.org/document/8228152",
+  summary: "Coauthored research on graph signal features and SVM classification, evaluated against MFCC baselines in clean and noisy audio.",
+  resumeSummary: "Coauthored research on graph signal features and SVM classification, evaluated against MFCC baselines.",
+};
+
 export const experience = [
   {
     company: "Scotiabank",
@@ -40,7 +49,7 @@ export const experience = [
     points: [
       "Partnered with product, UX, and ML teams on 12 major platform releases per year, reducing feature cycle time by 30%.",
       "Developed identity microservices and API interfaces for account creation and system integration on a platform processing over 10 million daily authentication requests.",
-      "Coordinated release management, security compliance gates, and quality assurance across identity services, balancing platform reliability with delivery timelines.",
+      "Coordinated identity service releases, security compliance gates, and QA to balance delivery speed with reliability.",
       "Defined service success metrics and monitored KPIs across more than five identity workstreams to support release prioritization and executive roadmap reporting.",
     ],
   },

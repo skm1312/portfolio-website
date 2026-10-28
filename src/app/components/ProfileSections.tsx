@@ -1,4 +1,4 @@
-import { experience, skillGroups } from "../profile-data";
+import { experience, skillGroups, publication } from "../profile-data";
 import ShadowBox from "./ShadowBox";
 
 export function ProfileRow({ title, children }: { title: string; children: React.ReactNode }) {
@@ -59,7 +59,10 @@ export function Certifications() {
       <p><strong>Professional Scrum Product Owner I (PSPO I)</strong><br />Scrum.org · Sep 2026</p>
       <p><strong>Project Management Professional (PMP)</strong><br />PMI · July 2024</p>
       <p><strong>Product Manager Certification</strong><br />BrainStation · Oct 2022</p>
-      <p><strong>Acoustic Event Detection using Graph Signals</strong><br />IEEE TENCON · Dec 2017</p>
+      <div>
+        <p><a className="text-link" href={publication.href} target="_blank" rel="noreferrer">{publication.title}</a><br />{publication.venue} · {publication.date}</p>
+        <p className="mt-2 text-neutral-700">{publication.summary}</p>
+      </div>
     </>
   );
 }
