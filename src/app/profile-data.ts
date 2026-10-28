@@ -15,6 +15,38 @@ export const publication = {
   resumeSummary: "Coauthored research on graph signal features and SVM classification, evaluated against MFCC baselines.",
 };
 
+export const certifications: {
+  title: string;
+  issuer: string;
+  date?: string;
+  href?: string;
+  note?: string;
+}[] = [
+  {
+    title: "Professional Scrum Product Owner I (PSPO I)",
+    issuer: "Scrum.org",
+    date: "Sep 2026",
+    href: "https://www.credly.com/badges/a4937b9e-2286-46f7-a1fe-5285452b406c/public_url",
+  },
+  {
+    title: "Project Management Professional (PMP)",
+    issuer: "PMI",
+    date: "July 2024",
+    href: "https://www.credly.com/badges/cefe229b-f10e-4c14-9cef-54c2d290354b/public_url",
+  },
+  {
+    title: "Generative AI Overview for Project Managers",
+    issuer: "PMI",
+    note: "Course completion",
+    href: "https://www.credly.com/badges/9a4fe16d-1b79-4b7b-a275-e0155f3d7f9a/public_url",
+  },
+  {
+    title: "Product Manager Certification",
+    issuer: "BrainStation",
+    date: "Oct 2022",
+  },
+];
+
 export const experience = [
   {
     company: "Scotiabank",

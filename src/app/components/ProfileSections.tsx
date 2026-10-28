@@ -1,4 +1,4 @@
-import { experience, skillGroups, publication } from "../profile-data";
+import { experience, skillGroups, publication, certifications } from "../profile-data";
 import ShadowBox from "./ShadowBox";
 
 export function ProfileRow({ title, children }: { title: string; children: React.ReactNode }) {
@@ -56,9 +56,15 @@ export function Education() {
 export function Certifications() {
   return (
     <>
-      <p><strong>Professional Scrum Product Owner I (PSPO I)</strong><br />Scrum.org · Sep 2026</p>
-      <p><strong>Project Management Professional (PMP)</strong><br />PMI · July 2024</p>
-      <p><strong>Product Manager Certification</strong><br />BrainStation · Oct 2022</p>
+      {certifications.map((credential) => (
+        <p key={credential.title}>
+          {credential.href ? (
+            <a className="text-link" href={credential.href} target="_blank" rel="noreferrer">{credential.title}</a>
+          ) : <strong>{credential.title}</strong>}
+          <br />
+          {[credential.issuer, credential.date, credential.note].filter(Boolean).join(" · ")}
+        </p>
+      ))}
       <div>
         <p><a className="text-link" href={publication.href} target="_blank" rel="noreferrer">{publication.title}</a><br />{publication.venue} · {publication.date}</p>
         <p className="mt-2 text-neutral-700">{publication.summary}</p>
