@@ -62,7 +62,7 @@ export function Certifications() {
             <a className="text-link" href={credential.href} target="_blank" rel="noreferrer">{credential.title}</a>
           ) : <strong>{credential.title}</strong>}
           <br />
-          {[credential.issuer, credential.date, credential.note].filter(Boolean).join(" · ")}
+          {[credential.issuer, credential.date].filter(Boolean).join(" · ")}
         </p>
       ))}
       <div>

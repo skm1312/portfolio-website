@@ -20,7 +20,6 @@ export const certifications: {
   issuer: string;
   date?: string;
   href?: string;
-  note?: string;
 }[] = [
   {
     title: "Professional Scrum Product Owner I (PSPO I)",
@@ -37,7 +36,6 @@ export const certifications: {
   {
     title: "Generative AI Overview for Project Managers",
     issuer: "PMI",
-    note: "Course completion",
     href: "https://www.credly.com/badges/9a4fe16d-1b79-4b7b-a275-e0155f3d7f9a/public_url",
   },
   {
